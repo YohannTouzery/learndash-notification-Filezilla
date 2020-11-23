@@ -1,0 +1,906 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: LearnDash LMS - Notifications\n"
+"POT-Creation-Date: 2020-06-15 20:42+0800\n"
+"PO-Revision-Date: 2020-06-15 20:41+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: learndash-notifications.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: includes/admin/class-ld-translations-notifications.php:16
+#: learndash-notifications/includes/admin/class-ld-translations-notifications.php:16
+msgid "LearnDash Notifications"
+msgstr ""
+
+#: includes/admin/class-settings.php:43 includes/admin/class-settings.php:79
+#: includes/admin/class-settings.php:111 includes/post-type.php:12
+#: includes/post-type.php:23
+#: learndash-notifications/includes/admin/class-settings.php:43
+#: learndash-notifications/includes/admin/class-settings.php:79
+#: learndash-notifications/includes/admin/class-settings.php:111
+#: learndash-notifications/includes/post-type.php:12
+#: learndash-notifications/includes/post-type.php:23
+msgid "Notifications"
+msgstr ""
+
+#: includes/admin/class-settings.php:69 includes/admin/class-settings.php:101
+#: learndash-notifications/includes/admin/class-settings.php:69
+#: learndash-notifications/includes/admin/class-settings.php:101
+msgid "Add New"
+msgstr ""
+
+#: includes/admin/class-settings.php:89 includes/admin/class-status-page.php:14
+#: includes/admin/class-status-page.php:42
+#: learndash-notifications/includes/admin/class-settings.php:89
+#: learndash-notifications/includes/admin/class-status-page.php:14
+#: learndash-notifications/includes/admin/class-status-page.php:42
+#: learndash-notifications/templates/admin/status-page.php:2
+#: templates/admin/status-page.php:2
+msgid "Status"
+msgstr ""
+
+#: includes/admin/class-settings.php:141 includes/meta-box.php:168
+#: learndash-notifications/includes/admin/class-settings.php:141
+#: learndash-notifications/includes/meta-box.php:168
+msgid "-- Select Lesson --"
+msgstr ""
+
+#: includes/admin/class-settings.php:142 includes/meta-box.php:181
+#: learndash-notifications/includes/admin/class-settings.php:142
+#: learndash-notifications/includes/meta-box.php:181
+msgid "-- Select Topic --"
+msgstr ""
+
+#: includes/admin/class-settings.php:143 includes/meta-box.php:194
+#: learndash-notifications/includes/admin/class-settings.php:143
+#: learndash-notifications/includes/meta-box.php:194
+msgid "-- Select Quiz --"
+msgstr ""
+
+#: includes/admin/class-settings.php:144
+#: learndash-notifications/includes/admin/class-settings.php:144
+msgid "-- Select Course First --"
+msgstr ""
+
+#: includes/admin/class-settings.php:145
+#: learndash-notifications/includes/admin/class-settings.php:145
+msgid "-- Select Lesson First --"
+msgstr ""
+
+#: includes/admin/class-settings.php:146
+#: learndash-notifications/includes/admin/class-settings.php:146
+msgid "-- Select Topic First --"
+msgstr ""
+
+#: includes/admin/class-settings.php:147
+#: learndash-notifications/includes/admin/class-settings.php:147
+msgid "-- Select Quiz First --"
+msgstr ""
+
+#: includes/admin/class-settings.php:148 includes/meta-box.php:169
+#: learndash-notifications/includes/admin/class-settings.php:148
+#: learndash-notifications/includes/meta-box.php:169
+msgid "Any Lesson"
+msgstr ""
+
+#: includes/admin/class-settings.php:149 includes/meta-box.php:182
+#: learndash-notifications/includes/admin/class-settings.php:149
+#: learndash-notifications/includes/meta-box.php:182
+msgid "Any Topic"
+msgstr ""
+
+#: includes/admin/class-settings.php:150 includes/meta-box.php:195
+#: learndash-notifications/includes/admin/class-settings.php:150
+#: learndash-notifications/includes/meta-box.php:195
+msgid "Any Quiz"
+msgstr ""
+
+#: includes/admin/class-status-page.php:13
+#: learndash-notifications/includes/admin/class-status-page.php:13
+msgid "LearnDash Notifications Status"
+msgstr ""
+
+#: includes/admin/class-status-page.php:43
+#: learndash-notifications/includes/admin/class-status-page.php:43
+msgid "Complete"
+msgstr ""
+
+#: includes/admin/class-status-page.php:44
+#: learndash-notifications/includes/admin/class-status-page.php:44
+msgid "Please keep this page open until the process is complete."
+msgstr ""
+
+#: includes/admin/class-status-page.php:45
+#: learndash-notifications/includes/admin/class-status-page.php:45
+#: learndash-notifications/templates/admin/status-page.php:54
+#: learndash-notifications/templates/admin/status-page.php:60
+#: templates/admin/status-page.php:54 templates/admin/status-page.php:60
+msgid "Run"
+msgstr ""
+
+#: includes/admin/class-status-page.php:47
+#: learndash-notifications/includes/admin/class-status-page.php:47
+msgid ""
+"Are you sure you want to empty scheduled notifications table? You can NOT "
+"undo this process. Please back up your database first!"
+msgstr ""
+
+#: includes/cron.php:70 learndash-notifications/includes/cron.php:70
+msgid "Every Minute"
+msgstr ""
+
+#: includes/logger.php:5 learndash-notifications/includes/logger.php:5
+#, php-format
+msgid "Notification with these data: %s was sent."
+msgstr ""
+
+#: includes/logger.php:9 learndash-notifications/includes/logger.php:9
+#, php-format
+msgid "Scheduled notification with these data: %s was sent."
+msgstr ""
+
+#: includes/logger.php:13 learndash-notifications/includes/logger.php:13
+#, php-format
+msgid ""
+"Scheduled notification for the timestamp: %d with these data: %s was stored "
+"in database."
+msgstr ""
+
+#: includes/logger.php:17 learndash-notifications/includes/logger.php:17
+#, php-format
+msgid ""
+"Scheduled notification with these data: %s was updated in database with "
+"these new data: %s. %d %s affected."
+msgstr ""
+
+#: includes/logger.php:17 includes/logger.php:21 includes/logger.php:26
+#: learndash-notifications/includes/logger.php:17
+#: learndash-notifications/includes/logger.php:21
+#: learndash-notifications/includes/logger.php:26
+msgid "row was"
+msgid_plural "rows were"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/logger.php:21 learndash-notifications/includes/logger.php:21
+#, php-format
+msgid ""
+"Empty delayed emails table process was run. %d %s deleted from database."
+msgstr ""
+
+#: includes/logger.php:26 learndash-notifications/includes/logger.php:26
+#, php-format
+msgid ""
+"Expired scheduled notifications were deleted. %d %s deleted from database."
+msgstr ""
+
+#: includes/meta-box.php:6 learndash-notifications/includes/meta-box.php:6
+msgid "Notification Settings"
+msgstr ""
+
+#: includes/meta-box.php:8 learndash-notifications/includes/meta-box.php:8
+msgid "Available Shortcodes"
+msgstr ""
+
+#: includes/meta-box.php:50 learndash-notifications/includes/meta-box.php:50
+msgid ""
+"Select an email trigger on the notification settings above to see available "
+"shortcodes."
+msgstr ""
+
+#: includes/meta-box.php:57 learndash-notifications/includes/meta-box.php:57
+msgid "Here are the available shortcodes for the email trigger selected:"
+msgstr ""
+
+#: includes/meta-box.php:72 learndash-notifications/includes/meta-box.php:72
+msgid "<em>Cumulative</em> is average for all quizzes of the course."
+msgstr ""
+
+#: includes/meta-box.php:74 learndash-notifications/includes/meta-box.php:74
+msgid "<em>Aggregate</em> is sum for all quizzes of the course."
+msgstr ""
+
+#: includes/meta-box.php:126 learndash-notifications/includes/meta-box.php:126
+msgid "Email trigger"
+msgstr ""
+
+#: includes/meta-box.php:127 learndash-notifications/includes/meta-box.php:127
+msgid "When this email will be sent."
+msgstr ""
+
+#: includes/meta-box.php:131 learndash-notifications/includes/meta-box.php:131
+msgid "-- Select an Email Trigger --"
+msgstr ""
+
+#: includes/meta-box.php:136 learndash-notifications/includes/meta-box.php:136
+msgid "Group"
+msgstr ""
+
+#: includes/meta-box.php:137 learndash-notifications/includes/meta-box.php:137
+msgid "Group that the notification is assigned to."
+msgstr ""
+
+#: includes/meta-box.php:142 learndash-notifications/includes/meta-box.php:142
+msgid "-- Select Group --"
+msgstr ""
+
+#: includes/meta-box.php:143 learndash-notifications/includes/meta-box.php:143
+msgid "Any Group"
+msgstr ""
+
+#: includes/meta-box.php:148 learndash-notifications/includes/meta-box.php:148
+msgid "Course"
+msgstr ""
+
+#: includes/meta-box.php:149 learndash-notifications/includes/meta-box.php:149
+msgid "Course that the notification is assigned to."
+msgstr ""
+
+#: includes/meta-box.php:155 learndash-notifications/includes/meta-box.php:155
+msgid "-- Select Course --"
+msgstr ""
+
+#: includes/meta-box.php:156 learndash-notifications/includes/meta-box.php:156
+msgid "Any Course"
+msgstr ""
+
+#: includes/meta-box.php:161 learndash-notifications/includes/meta-box.php:161
+msgid "Lesson"
+msgstr ""
+
+#: includes/meta-box.php:162 learndash-notifications/includes/meta-box.php:162
+msgid "Lesson that the notification is assigned to."
+msgstr ""
+
+#: includes/meta-box.php:174 learndash-notifications/includes/meta-box.php:174
+msgid "Topic"
+msgstr ""
+
+#: includes/meta-box.php:175 learndash-notifications/includes/meta-box.php:175
+msgid "Topic that the notification is assigned to."
+msgstr ""
+
+#: includes/meta-box.php:187 learndash-notifications/includes/meta-box.php:187
+msgid "Quiz"
+msgstr ""
+
+#: includes/meta-box.php:188 learndash-notifications/includes/meta-box.php:188
+msgid "Quiz that the notification is assigned to."
+msgstr ""
+
+#: includes/meta-box.php:200 includes/meta-box.php:220
+#: learndash-notifications/includes/meta-box.php:200
+#: learndash-notifications/includes/meta-box.php:220
+msgid "After how many days?"
+msgstr ""
+
+#: includes/meta-box.php:201 includes/meta-box.php:211
+#: includes/meta-box.php:221 learndash-notifications/includes/meta-box.php:201
+#: learndash-notifications/includes/meta-box.php:211
+#: learndash-notifications/includes/meta-box.php:221
+msgid "Setting associated with the email trigger setting above."
+msgstr ""
+
+#: includes/meta-box.php:202 includes/meta-box.php:212
+#: includes/meta-box.php:222 includes/meta-box.php:248
+#: learndash-notifications/includes/meta-box.php:202
+#: learndash-notifications/includes/meta-box.php:212
+#: learndash-notifications/includes/meta-box.php:222
+#: learndash-notifications/includes/meta-box.php:248
+msgid "day(s)"
+msgstr ""
+
+#: includes/meta-box.php:210 learndash-notifications/includes/meta-box.php:210
+msgid "Before how many days?"
+msgstr ""
+
+#: includes/meta-box.php:230 learndash-notifications/includes/meta-box.php:230
+msgid "Recipient"
+msgstr ""
+
+#: includes/meta-box.php:231 learndash-notifications/includes/meta-box.php:231
+msgid "Recipient of this email."
+msgstr ""
+
+#: includes/meta-box.php:238 learndash-notifications/includes/meta-box.php:238
+msgid "Additional Recipient"
+msgstr ""
+
+#: includes/meta-box.php:239 learndash-notifications/includes/meta-box.php:239
+msgid ""
+"Additional email addresses (separated by comma) that will also get this "
+"notification"
+msgstr ""
+
+#: includes/meta-box.php:246 learndash-notifications/includes/meta-box.php:246
+msgid "Delay"
+msgstr ""
+
+#: includes/meta-box.php:247 learndash-notifications/includes/meta-box.php:247
+msgid ""
+"How many days this email is delayed after the trigger occurs (default is 0)."
+msgstr ""
+
+#: includes/meta-box.php:317 learndash-notifications/includes/meta-box.php:317
+msgid "Click for Help!"
+msgstr ""
+
+#: includes/meta-box.php:551 learndash-notifications/includes/meta-box.php:551
+msgid "Display user's username."
+msgstr ""
+
+#: includes/meta-box.php:552 learndash-notifications/includes/meta-box.php:552
+msgid "Display user's email."
+msgstr ""
+
+#: includes/meta-box.php:553 learndash-notifications/includes/meta-box.php:553
+msgid "Display user's display name."
+msgstr ""
+
+#: includes/meta-box.php:554 learndash-notifications/includes/meta-box.php:554
+msgid "Display user's first name."
+msgstr ""
+
+#: includes/meta-box.php:555 learndash-notifications/includes/meta-box.php:555
+msgid "Display user's last name."
+msgstr ""
+
+#: includes/meta-box.php:559 learndash-notifications/includes/meta-box.php:559
+msgid "Display group title."
+msgstr ""
+
+#: includes/meta-box.php:563 learndash-notifications/includes/meta-box.php:563
+msgid "Display course title."
+msgstr ""
+
+#: includes/meta-box.php:564 learndash-notifications/includes/meta-box.php:564
+msgid "Display course URL."
+msgstr ""
+
+#: includes/meta-box.php:568 learndash-notifications/includes/meta-box.php:568
+msgid ""
+"Display time when course is completed. <a href=\"http://php.net/manual/en/"
+"function.date.php\" target=\"_blank\">Click here</a> to see format options."
+msgstr ""
+
+#: includes/meta-box.php:569 learndash-notifications/includes/meta-box.php:569
+msgid "Display average points scored across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:570 learndash-notifications/includes/meta-box.php:570
+msgid "Display average points got across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:571 learndash-notifications/includes/meta-box.php:571
+msgid "Display average total points got across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:572 learndash-notifications/includes/meta-box.php:572
+msgid ""
+"Display average correct answers percentage across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:573 learndash-notifications/includes/meta-box.php:573
+msgid "Display average time spent across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:574 learndash-notifications/includes/meta-box.php:574
+msgid ""
+"Display average correct answer counted across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:575 learndash-notifications/includes/meta-box.php:575
+msgid ""
+"Display sum of correct answers percentage across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:576 learndash-notifications/includes/meta-box.php:576
+msgid "Display sum of points scored across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:577 learndash-notifications/includes/meta-box.php:577
+msgid "Display sum of points got across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:578 learndash-notifications/includes/meta-box.php:578
+msgid "Display sum of total points got across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:579 learndash-notifications/includes/meta-box.php:579
+msgid "Display sum of time spent across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:580 learndash-notifications/includes/meta-box.php:580
+msgid "Display sum of correct answer counted across all quizzes on the course."
+msgstr ""
+
+#: includes/meta-box.php:584 learndash-notifications/includes/meta-box.php:584
+msgid "Display lesson title."
+msgstr ""
+
+#: includes/meta-box.php:585 learndash-notifications/includes/meta-box.php:585
+msgid "Display lesson URL."
+msgstr ""
+
+#: includes/meta-box.php:589 learndash-notifications/includes/meta-box.php:589
+msgid "Display topic title."
+msgstr ""
+
+#: includes/meta-box.php:590 learndash-notifications/includes/meta-box.php:590
+msgid "Display topic URL."
+msgstr ""
+
+#: includes/meta-box.php:594 learndash-notifications/includes/meta-box.php:594
+msgid "Display quiz URL."
+msgstr ""
+
+#: includes/meta-box.php:595 learndash-notifications/includes/meta-box.php:595
+msgid ""
+"Display time when the quiz is taken. <a href=\"http://php.net/manual/en/"
+"function.date.php\" target=\"_blank\">Click here</a> to see format options."
+msgstr ""
+
+#: includes/meta-box.php:596 learndash-notifications/includes/meta-box.php:596
+msgid "Display correct percentage of the quiz."
+msgstr ""
+
+#: includes/meta-box.php:597 learndash-notifications/includes/meta-box.php:597
+msgid ""
+"Display whether the user passes the quiz or not. Display \"Yes\" or \"No\"."
+msgstr ""
+
+#: includes/meta-box.php:598 learndash-notifications/includes/meta-box.php:598
+msgid "Display quiz title."
+msgstr ""
+
+#: includes/meta-box.php:599 learndash-notifications/includes/meta-box.php:599
+msgid "Display course title that quiz belongs to."
+msgstr ""
+
+#: includes/meta-box.php:600 learndash-notifications/includes/meta-box.php:600
+msgid "Display how long is taken to complete the quiz."
+msgstr ""
+
+#: includes/meta-box.php:601 learndash-notifications/includes/meta-box.php:601
+msgid "Display quiz result based on categories."
+msgstr ""
+
+#: includes/meta-box.php:605 learndash-notifications/includes/meta-box.php:605
+msgid "Display total points earned."
+msgstr ""
+
+#: includes/meta-box.php:606 learndash-notifications/includes/meta-box.php:606
+msgid "Display total points possible for the essay."
+msgstr ""
+
+#: includes/meta-box.php:610 learndash-notifications/includes/meta-box.php:610
+msgid "Display assignment title."
+msgstr ""
+
+#: includes/meta-box.php:611 learndash-notifications/includes/meta-box.php:611
+msgid "Display assignment file name."
+msgstr ""
+
+#: includes/meta-box.php:612 learndash-notifications/includes/meta-box.php:612
+msgid "Display assignment file link."
+msgstr ""
+
+#: includes/meta-box.php:613 learndash-notifications/includes/meta-box.php:613
+msgid "Display lesson title that the assignment belongs to."
+msgstr ""
+
+#: includes/meta-box.php:614 learndash-notifications/includes/meta-box.php:614
+msgid "Display lesson type that the assignment belongs to."
+msgstr ""
+
+#: includes/notification.php:1481
+#: learndash-notifications/includes/notification.php:1481
+msgid "Assignment"
+msgstr ""
+
+#: includes/notification.php:1484
+#: learndash-notifications/includes/notification.php:1484
+msgid "Essay"
+msgstr ""
+
+#: includes/notification.php:1497
+#: learndash-notifications/includes/notification.php:1497
+#, php-format
+msgid "New comment on %s \"%s\""
+msgstr ""
+
+#. translators: 1: comment author, 2: author IP, 3: author domain
+#: includes/notification.php:1499
+#: learndash-notifications/includes/notification.php:1499
+#, php-format
+msgid "Author: %1$s (IP: %2$s, %3$s)"
+msgstr ""
+
+#: includes/notification.php:1500
+#: learndash-notifications/includes/notification.php:1500
+#, php-format
+msgid "Email: %s"
+msgstr ""
+
+#: includes/notification.php:1501
+#: learndash-notifications/includes/notification.php:1501
+#, php-format
+msgid "Comment: %s"
+msgstr ""
+
+#: includes/notification.php:1502
+#: learndash-notifications/includes/notification.php:1502
+#, php-format
+msgid "You can see all comments on this %s here:"
+msgstr ""
+
+#: includes/notification.php:1504
+#: learndash-notifications/includes/notification.php:1504
+#, php-format
+msgid "Permalink: %s"
+msgstr ""
+
+#. translators: 1: title, 2: post title
+#: includes/notification.php:1507
+#: learndash-notifications/includes/notification.php:1507
+#, php-format
+msgid "%1$s Comment: \"%2$s\""
+msgstr ""
+
+#: includes/notification.php:1597
+#: learndash-notifications/includes/notification.php:1597
+msgid "User enrolls into a group"
+msgstr ""
+
+#: includes/notification.php:1598
+#: learndash-notifications/includes/notification.php:1598
+msgid "User enrolls into a course"
+msgstr ""
+
+#: includes/notification.php:1599
+#: learndash-notifications/includes/notification.php:1599
+msgid "User completes a course"
+msgstr ""
+
+#: includes/notification.php:1600
+#: learndash-notifications/includes/notification.php:1600
+msgid "User completes a lesson"
+msgstr ""
+
+#: includes/notification.php:1601
+#: learndash-notifications/includes/notification.php:1601
+msgid "A scheduled lesson is available to user"
+msgstr ""
+
+#: includes/notification.php:1602
+#: learndash-notifications/includes/notification.php:1602
+msgid "User completes a topic"
+msgstr ""
+
+#: includes/notification.php:1603
+#: learndash-notifications/includes/notification.php:1603
+msgid "User passes a quiz"
+msgstr ""
+
+#: includes/notification.php:1604
+#: learndash-notifications/includes/notification.php:1604
+msgid "User fails a quiz"
+msgstr ""
+
+#: includes/notification.php:1605
+#: learndash-notifications/includes/notification.php:1605
+msgid "User submits a quiz"
+msgstr ""
+
+#: includes/notification.php:1606
+#: learndash-notifications/includes/notification.php:1606
+msgid "User completes a quiz"
+msgstr ""
+
+#: includes/notification.php:1607
+#: learndash-notifications/includes/notification.php:1607
+msgid "Essay has just been submitted"
+msgstr ""
+
+#: includes/notification.php:1608
+#: learndash-notifications/includes/notification.php:1608
+msgid "Essay question has been put into graded status"
+msgstr ""
+
+#: includes/notification.php:1609
+#: learndash-notifications/includes/notification.php:1609
+msgid "An Assignment is uploaded"
+msgstr ""
+
+#: includes/notification.php:1610
+#: learndash-notifications/includes/notification.php:1610
+msgid "An Assignment is approved"
+msgstr ""
+
+#: includes/notification.php:1611
+#: learndash-notifications/includes/notification.php:1611
+msgid "User hasn't logged in for \"X\" days"
+msgstr ""
+
+#: includes/notification.php:1612
+#: learndash-notifications/includes/notification.php:1612
+msgid "\"X\" days before course expires"
+msgstr ""
+
+#: includes/notification.php:1613
+#: learndash-notifications/includes/notification.php:1613
+msgid "\"X\" days after course expires"
+msgstr ""
+
+#: includes/notification.php:1621
+#: learndash-notifications/includes/notification.php:1621
+msgid "User"
+msgstr ""
+
+#: includes/notification.php:1622
+#: learndash-notifications/includes/notification.php:1622
+msgid "Group Leader"
+msgstr ""
+
+#: includes/notification.php:1623
+#: learndash-notifications/includes/notification.php:1623
+msgid "Admin"
+msgstr ""
+
+#: includes/post-type.php:13 learndash-notifications/includes/post-type.php:13
+msgid "Notification"
+msgstr ""
+
+#: includes/post-type.php:14 learndash-notifications/includes/post-type.php:14
+msgctxt "learndash-notifications"
+msgid "Add New Notification"
+msgstr ""
+
+#: includes/post-type.php:15 learndash-notifications/includes/post-type.php:15
+msgid "Add New Notification"
+msgstr ""
+
+#: includes/post-type.php:16 learndash-notifications/includes/post-type.php:16
+msgid "Edit Notification"
+msgstr ""
+
+#: includes/post-type.php:17 learndash-notifications/includes/post-type.php:17
+msgid "New Notification"
+msgstr ""
+
+#: includes/post-type.php:18 learndash-notifications/includes/post-type.php:18
+msgid "View Notification"
+msgstr ""
+
+#: includes/post-type.php:19 learndash-notifications/includes/post-type.php:19
+msgid "Search Notifications"
+msgstr ""
+
+#: includes/post-type.php:20 learndash-notifications/includes/post-type.php:20
+msgid "No Notification found"
+msgstr ""
+
+#: includes/post-type.php:21 learndash-notifications/includes/post-type.php:21
+msgid "No Notification found in Trash"
+msgstr ""
+
+#: includes/post-type.php:22 learndash-notifications/includes/post-type.php:22
+msgid "Parent Notification:"
+msgstr ""
+
+#: includes/post-type.php:29 learndash-notifications/includes/post-type.php:29
+msgid "Notifications created for LearnDash."
+msgstr ""
+
+#: includes/post-type.php:64 includes/post-type.php:67
+#: learndash-notifications/includes/post-type.php:64
+#: learndash-notifications/includes/post-type.php:67
+msgid "Notification updated."
+msgstr ""
+
+#: includes/post-type.php:65 learndash-notifications/includes/post-type.php:65
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/post-type.php:66 learndash-notifications/includes/post-type.php:66
+msgid "Custom field deleted."
+msgstr ""
+
+#. translators: %s: date and time of the revision
+#: includes/post-type.php:69 learndash-notifications/includes/post-type.php:69
+#, php-format
+msgid "Notification restored to revision from %s."
+msgstr ""
+
+#: includes/post-type.php:70 learndash-notifications/includes/post-type.php:70
+msgid "Notification published."
+msgstr ""
+
+#: includes/post-type.php:71 learndash-notifications/includes/post-type.php:71
+msgid "Notification saved."
+msgstr ""
+
+#: includes/post-type.php:72 learndash-notifications/includes/post-type.php:72
+msgid "Notification submitted."
+msgstr ""
+
+#: includes/post-type.php:74 learndash-notifications/includes/post-type.php:74
+msgid "Notification draft updated."
+msgstr ""
+
+#: includes/post-type.php:96 learndash-notifications/includes/post-type.php:96
+msgid "Trigger"
+msgstr ""
+
+#: includes/post-type.php:122
+#: learndash-notifications/includes/post-type.php:122
+msgid "All Courses"
+msgstr ""
+
+#: includes/post-type.php:139
+#: learndash-notifications/includes/post-type.php:139
+msgid "All lessons"
+msgstr ""
+
+#: includes/post-type.php:156
+#: learndash-notifications/includes/post-type.php:156
+msgid "All topics"
+msgstr ""
+
+#: includes/post-type.php:175
+#: learndash-notifications/includes/post-type.php:175
+msgid "All quizzes"
+msgstr ""
+
+#: includes/post-type.php:228
+#: learndash-notifications/includes/post-type.php:228
+#, php-format
+msgid "Select %s"
+msgstr ""
+
+#: includes/post-type.php:229
+#: learndash-notifications/includes/post-type.php:229
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: includes/post-type.php:244
+#: learndash-notifications/includes/post-type.php:244
+msgid "Select Trigger"
+msgstr ""
+
+#: includes/shortcode.php:303
+#: learndash-notifications/includes/shortcode.php:303
+#: learndash-notifications/templates/admin/status-page.php:9
+#: templates/admin/status-page.php:9
+msgid "Yes"
+msgstr ""
+
+#: includes/shortcode.php:303
+#: learndash-notifications/includes/shortcode.php:303
+msgid "No"
+msgstr ""
+
+#: includes/subscription-manager.php:49
+#: learndash-notifications/includes/subscription-manager.php:49
+#, php-format
+msgid ""
+"Don't want to receive this email anymore? <a href=\"%s\">Click here</a> to "
+"manage your notification emails subscription."
+msgstr ""
+
+#: includes/subscription-manager.php:94
+#: learndash-notifications/includes/subscription-manager.php:94
+#: learndash-notifications/templates/subscription-page.php:88
+#: templates/subscription-page.php:88
+msgid "LearnDash Notifications Subscription"
+msgstr ""
+
+#: includes/tools.php:29 learndash-notifications/includes/tools.php:29
+msgid ""
+"Your ld_notifications_delayed_emails DB table has been successfully emptied."
+msgstr ""
+
+#: learndash-notifications/templates/admin/status-page.php:7
+#: templates/admin/status-page.php:7
+msgid "Server Cron Setup"
+msgstr ""
+
+#: learndash-notifications/templates/admin/status-page.php:9
+#: learndash-notifications/templates/admin/status-page.php:24
+#: templates/admin/status-page.php:9 templates/admin/status-page.php:24
+msgid "Not yet detected"
+msgstr ""
+
+#: learndash-notifications/templates/admin/status-page.php:10
+#: templates/admin/status-page.php:10
+#, php-format
+msgid ""
+", <a href=\"%s\" target=\"_blank\" rel=\"noreferrer\">click here</a> for "
+"cron setup instruction (it may take some times for this value to be updated)"
+msgstr ""
+
+#: learndash-notifications/templates/admin/status-page.php:14
+#: templates/admin/status-page.php:14
+msgid "Queued Emails in DB"
+msgstr ""
+
+#: learndash-notifications/templates/admin/status-page.php:22
+#: templates/admin/status-page.php:22
+msgid "Last Run"
+msgstr ""
+
+#: learndash-notifications/templates/admin/status-page.php:33
+#: templates/admin/status-page.php:33
+msgid "Tools"
+msgstr ""
+
+#: learndash-notifications/templates/admin/status-page.php:44
+#: templates/admin/status-page.php:44
+msgid "Empty DB Table"
+msgstr ""
+
+#: learndash-notifications/templates/admin/status-page.php:58
+#: templates/admin/status-page.php:58
+msgid "Fix Scheduled Notification Recipients"
+msgstr ""
+
+#: learndash-notifications/templates/subscription-page.php:94
+#: templates/subscription-page.php:94
+msgid "Your notification settings has been successfully saved."
+msgstr ""
+
+#: learndash-notifications/templates/subscription-page.php:99
+#: templates/subscription-page.php:99
+msgid "There is something wrong. Please try again later."
+msgstr ""
+
+#: learndash-notifications/templates/subscription-page.php:120
+#: templates/subscription-page.php:120
+msgid "Triggers"
+msgstr ""
+
+#: learndash-notifications/templates/subscription-page.php:123
+#: templates/subscription-page.php:123
+msgid "Enabled"
+msgstr ""
+
+#: learndash-notifications/templates/subscription-page.php:126
+#: templates/subscription-page.php:126
+msgid "Select All"
+msgstr ""
+
+#: learndash-notifications/templates/subscription-page.php:142
+#: templates/subscription-page.php:142
+msgid "Save Changes"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "LearnDash LMS - Notifications"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Create and send notification emails to the users."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "LearnDash"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.learndash.com/"
+msgstr ""

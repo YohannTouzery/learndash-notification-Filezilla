@@ -426,14 +426,8 @@ learndash_notifications();
 
 
 
-
-//register_activation_hook( __FILE__, 'learnx_notification_activation' );
-function learnx_notification_activation($titre_notification) {
-
-
-	
-//création table job_learnx_notification_log
-    
+register_activation_hook( __FILE__, 'learnx_notification_activation' );
+function learnx_notification_activation() {
 	global $wpdb, $table_prefix, $current_user;
 
     $resultat_Create = $wpdb->query("CREATE TABLE IF NOT EXISTS `".$table_prefix."learnx_notification_log` (
@@ -442,127 +436,21 @@ function learnx_notification_activation($titre_notification) {
                               `date` TIMESTAMP,
                               `destinataires` VARCHAR(255),
                               PRIMARY KEY (`id`));");
-	
-	if(!$resultat_Create){
-
-		echo "La table n'a pas pu être créée. ";
-		
-	}else{
-
-		echo "La table a été créée ";
-
-	}
-	
-//Test pour affichier le nom de l'utilisateur et le format de la date actuelle ("Y-m-d") et l'heure ("H:i:s") 
-
-	//$user = get_current_user();
-
-	//echo "| Le nom d'utilisateur est :".$current_user->user_login;
-	
-	
-	//$Datetoday = date("Y-m-d")." à ".date("H:i:s"); 
-	
-	//echo " | La date du jour est ".$Datetoday;
-
-//Affiche une erreur si la requête sélect echoue
-
-if(!empty($wpbd->last_error)){ 
-		//echo $wpbd->last_error;
-	
-
-// Pour relever une erreur : $wpbd->last_error
-
-	//exit();
-
-// 
-	/*
-	$resultat_Create = $wpdb->query("DROP TABLE IF EXISTS `".$table_prefix."learnx_notification_log`;");
-
-	if(!$resultat_Create){
-
-		echo "La table n'a pas été supprimé ";
-		
-	}else{
-
-		echo "La table a été supprimé ";
-
-	}
-	*/
-	
-
-		//exit();
-	
-//Insertion de données dans la table job_learnx_notification_log ET Vérification
-
-	
-	$resultat_insert = $wpdb->query("SET time_zone = '+01:00'");
-	if(!$resultat_insert){
-
-		echo "Time zone ok!";
-
-	}else{
-		echo "Time zone ko!";
 }
 
 
+//register_activation_hook( __FILE__, 'learnx_notification_activation' );
+function learnx_notification_add_log($titre_notification, $email) {
+
+	global $wpdb, $table_prefix, $current_user;
+
+
+	//Insertion de données dans la table job_learnx_notification_log ET Vérification
+	$resultat_insert = $wpdb->query("SET time_zone = '+01:00'");
 
 	$resultat_insert = $wpdb->query("INSERT INTO `".$table_prefix."learnx_notification_log` (`notification`, `date`, `destinataires`)
 		VALUES
-		('".$titre_notification."', CURRENT_TIMESTAMP, '".$current_user->user_login."');"
+		('".$titre_notification."', CURRENT_TIMESTAMP, '".$email."');"
 		);
-		/*
-		$resultat_insert = $wpdb->query("INSERT INTO `".$table_prefix."learnx_notification_log` (`notification`, `date`, `destinataires`)
-		VALUES
-		('".$titre_notification."', '".$Datetoday."', '".$current_user->user_login."');"
-		);
-		*/
-	if(!$resultat_insert){
 
-		echo "Les données n'ont pas été insérées!";
-
-	}else{
-		echo "Les données ont bien été insérées!";
-	}
-
-
-//fermeture du $wpbd->last_error
-}else{
-	echo " | Il n'y a pas d'erreur pour le moment";
 }
-
-/*
-	$result = mysql_query('SELECT * WHERE 1=1');
-	if (!$result) {
-    die('Requête invalide : ' . mysql_error());
-	}
-*/
-
-	//exit();
-	
-}
-/*
-
-//Sélection de toutes les données de la table job_learnx_notification_log et affichage dans un tableau
-
-$resultat_select = $wpdb->get_results("SELECT * FROM `".$table_prefix."learnx_notification_log`");
-
-
-//print_r($resultat_select);
-
-echo "<table border=1>";
-	echo "<tr>";
-		echo "<th>Notification</th>";
-		echo "<th>Date</th>";
-		echo "<th>Destinataires</th>";
-	echo "</tr>";
-foreach($resultat_select as $result)
-{
-echo "<tr>";
-	   echo "<td>".$result->notification."</td>";
-	   echo "<td>".$result->date."</td>";
-	   echo "<td>".$result->destinataires."</td>";
-   echo "</tr>";
-}
-echo "</table>";
-
-*/

@@ -313,22 +313,29 @@ function learndash_notifications_meta_box_output( $key, $args ) {
 	ob_start();
 	?>
 
+
+	<?php $hide_on = ''; ?>
+	<?php if($key == "delay")
+		$hide_on = 'display: none;';
+	?>
+<?php /*echo $hide_on;*/ ?>
+
 	<div class="sfwd_input <?php echo $parent_class; ?> <?php echo $class; ?> <?php echo $hide_delay; ?> <?php echo $hide_on ?> <?php echo $hide_empty_select; ?>" id="<?php echo $key; ?>" style="<?php echo $hide; ?>">
 		<span class="sfwd_option_label">
-			<a class="sfwd_help_text_link" style="cursor:pointer;" title="<?php _e( 'Click for Help!', 'learndash-notifications' ); ?>" onclick="toggleVisibility( 'learndash-notifications_<?php echo $key; ?>_tip' );"><img src="<?php echo LEARNDASH_LMS_PLUGIN_URL . 'assets/images/question.png' ?>"><label class="sfwd_label textinput"><?php echo $args['title'] ?></label></a>
+			<a class="sfwd_help_text_link" style="cursor:pointer; <?php echo $hide_on; ?>" title="<?php _e( 'Click for Help!', 'learndash-notifications' ); ?>" onclick="toggleVisibility( 'learndash-notifications_<?php echo $key; ?>_tip' );"><img src="<?php echo LEARNDASH_LMS_PLUGIN_URL . 'assets/images/question.png' ?>"><label class="sfwd_label textinput"><?php echo $args['title'] ?></label></a>
 		</span>
 		<span class="sfwd_option_input">
 			<div class="sfwd_option_div">
-				
+
 				<?php if ( $args['type'] == 'dropdown') : ?>
-					
+
 				<select name="<?php echo $input_name; ?>" <?php /*echo $disabled;*/ ?>>
 
 					<?php foreach ( $args['value'] as $value => $title ) : ?>
 
-					<?php $selected = (string) $value === (string) $key_value ? 'selected="selected"' : '';  ?>
-						
-					<option value="<?php echo $value; ?>" <?php echo $selected; ?>><?php echo $title; ?></option>
+							<?php $selected = (string) $value === (string) $key_value ? 'selected="selected"' : '';  ?>
+
+							<option value="<?php echo $value; ?>" <?php echo $selected; ?>><?php echo $title; ?></option>
 
 					<?php endforeach; ?>
 
@@ -336,17 +343,23 @@ function learndash_notifications_meta_box_output( $key, $args ) {
 
 				<?php endif; // Endif type == 'dropdown' ?>
 
-				<?php if ( $args['type'] == 'text') : ?>
+				<?php if ( $args['type'] == 'text'  && $input_name != "_ld_notifications_delay" ){ ?> 
 
-				<?php $value = ! empty( $key_value ) ? $key_value : $default; ?>
+					<?php $value = ! empty( $key_value ) ? $key_value : $default; ?>
 
-				<input type="text" size="<?php echo $args['size']; ?>" name="<?php echo $input_name; ?>" value="<?php echo $value; ?>" style="width: initial;" <?php/* echo $disabled;*/ ?>>
+					<input type="text" size="<?php echo $args['size']; ?>" name="<?php echo $input_name; ?>" value="<?php echo $value; ?>" style="width: initial;">
 
-				<?php if ( isset( $args['label'] ) ) : ?>
-					<label><?php echo $args['label']; ?></label>
-				<?php endif; ?>
+					<?php if ( isset( $args['label'] ) ) : ?>
+						 <label><?php echo $args['label']; ?></label> 
+					<?php endif; ?>
 					
-				<?php endif; // Endif type == 'text' ?>
+					<?php }else{  // Endif type == 'text'  ?>
+
+					 <input type="hidden" size="<?php  echo $args['size'];  ?>" name="<?php  echo $input_name;  ?>" value="<?php  echo $value;  ?>" style="width: initial;"> 
+
+					<?php  }  ?>
+
+				<?php /*endif; */ ?>
 
 				<?php if ( $args['type'] == 'checkbox') : ?>
 
@@ -359,8 +372,13 @@ function learndash_notifications_meta_box_output( $key, $args ) {
 
 				<?php $checked = in_array( $value, $key_value ) ? 'checked="checked"' : ''; ?>
 
-				<input type="checkbox" name="<?php echo $cb_input_name; ?>" id="<?php echo $value ?>" value="<?php echo $value; ?>" <?php echo $checked; ?> <?php /*echo $disabled;*/ ?>>
-				<label for="<?php echo $value ?>"><?php echo $label; ?></label><br />
+					<?php /* Check si la case à cocher 'admin' apparait et la retire  */ ?>
+					<?php if($value != "admin"){ ?>
+
+						<input type="checkbox" name="<?php echo $cb_input_name; ?>" id="<?php echo $value ?>" value="<?php echo $value; ?>" <?php echo $checked; ?> <?php /*echo $disabled;*/ ?>>
+						<label for="<?php echo $value ?>"><?php echo $label; ?></label><br />
+
+					<?php } ?>
 
 				<?php endforeach; ?>
 
@@ -376,12 +394,16 @@ function learndash_notifications_meta_box_output( $key, $args ) {
 				<?php endif; // End if $args['type'] is checkbox check ?>
 
 			</div>
+
 			<div class="sfwd_help_text_div" style="display: none;" id="learndash-notifications_<?php echo $key; ?>_tip">
 				<label class="sfwd_help_text"><?php echo $args['help_text']; ?></label>
 			</div>
+
 		</span>
 		<p style="clear:left"></p>
 	</div>
+
+	
 
 	<?php
 	return ob_get_clean();

@@ -2018,10 +2018,9 @@ function learndash_notifications_send_email( $emails, $title, $content, $bcc = a
 			// Reset mail content type back to plain
 			remove_filter( 'wp_mail_content_type', 'learndash_notifications_set_html_mail_content_type' );
 		}
+		//insert 
+		learnx_notification_add_log($title, $email);
 	}
-
-//insert 
-learnx_notification_activation($title);
 
 	return true;
 }
